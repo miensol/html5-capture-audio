@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style type="text/css">
 			.span {
 				display: inline-block;
-				width: 150px; 
+				width: 250px;
+				line-height: 30px;
+				font-size: 20px;
+				margin-bottom: 30px;
+				margin-right: 30px; 
 			}
 
 		</style>
 	</head>
 	<body>
 		<div class="span">
-			<input type="file" name="audio" accept="audio/*" capture>
+			<label for="audio1">Audio Capture Attribute</label>
+			<input type="file" name="audio1" accept="audio/*" capture>
+		</div>
+		<div class="span">
+			<label for="audio3">Audio Capture Attribute set to microphone</label>
+			<input type="file" name="audio3" accept="audio/*" capture="microphone">
+		</div>
+		<div class="span">
+			<label for="audio2">Audio Catpure inside accept</label>
+			<input type="file" name="audio2" accept="audio/*;capture=microphone">
 		</div>
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script type="text/javascript">
 			$(function(){
 
-				
+
 			});
 		</script>
 	</body>
